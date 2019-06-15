@@ -81,6 +81,14 @@ button{
 .span-bold{
 	font-family: 'Gilroy Bold';
 }
+.title {
+	font-family: 'Gilroy ExtraBold';
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+	color: #125ECF;
+}
 .container{
 	max-width: 285px;
 	-webkit-box-sizing: border-box;
@@ -91,6 +99,10 @@ button{
 	.container {
 		max-width: 690px;
 		margin: 0 auto;
+	}
+	.title {
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
 @media (min-width: 1150px) {
@@ -533,6 +545,7 @@ button{
 		background-size: cover;
 		height: 100vh;
 		width: 100%;
+		position: relative;
 	}
 	.main__slider-head{
 		font-size: 70px;
@@ -541,23 +554,36 @@ button{
 	.main__slider-wrap{
 		padding-top: 180px;
 	}
-	.main__slider-social{
-		display: none;
-	}
 	.main__slider-companies{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-right: 50px;
 		align-items: flex-end;
-		padding-bottom: 117px;
+		padding-bottom: 57px;
+		width: 485px;
+	}
+	.main__slider-social{
+		display: block;
+		position: absolute;
+		top: 235px;
+		right: 40px;
+		width: 50px;
+		height: 135px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.main__slider-social-img:hover{
+		filter: invert(100%);
 	}
 	.main__slider-head{
 		font-family: 'Gilroy Light';
 		margin-bottom: 25px;
 	}
 	.main__slider-text{
-		padding-bottom: 150px;
+		margin-bottom: 150px;
 		margin-right: 88px;
 		font-size: 16px;
 		line-height: 27px;
@@ -692,3 +718,7 @@ button{
 	text-align: center;
 	flex-grow: 1;
 }
+
+
+
+/* Footer */
