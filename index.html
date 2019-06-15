@@ -10,18 +10,27 @@
 
 <body>
 
-	<!-- <header class="header">
-		
-	</header> -->
+	<header class="header">
+		<button class="header__button-close"></button>
+		<ul class="header__nav-list">
+			<li class="header__nav-item"><a class="header__nav-item-link" href="index.html">Главная</a></li>
+			<li class="header__nav-item"><a class="header__nav-item-link" href="portfolio.html">Портфолио</a></li>
+			<li class="header__nav-item"><a class="header__nav-item-link" href="about.html">О Нас</a></li>
+		</ul>
+	</header>
 
 	<main class="index__main">
 		<section class="main__slider">
 			<div class="header__wrap">
-				<button class="header__btn"></button>
-				<img src="img/logo.png" alt="" class="header__logo">
-				<p class="p0 header__text">Видеопродакшн<br> полного цикла</p>
-				<a href="tel:+74951124252" class="header__tel">+7 495 112-42-52</a>
-				<a href="#" class="header__price">Рассчитать стоимость</a>
+				<div class="header__btn-logo-text">
+					<button class="header__btn"></button>
+					<img src="img/logo.png" alt="" class="header__logo">
+					<p class="p0 header__text">Видеопродакшн<br> полного цикла</p>
+				</div>
+				<div class="header__tel-price">
+					<a href="tel:+74951124252" class="header__tel">+7 495 112-42-52</a>
+					<a href="#" class="header__price">Рассчитать стоимость</a>
+				</div>
 			</div>
 			<div class="main__slider-wrap container">
 				<h1 class="p0 main__slider-head"><span class="span-bold">Снимаем  и продвигаем</span> видеоролики</h1>
@@ -157,9 +166,12 @@
 		
 	</footer>
 
-	<div class="modal-shadow"></div>
-	
+	<div class="modal-shadow">
+		<button class="modal-shadow-close"></button>
+	</div>
+
 	<script src="scripts/best.js"></script>
+	<script src="scripts/menu.js"></script>
 
 </body>
 </html>
