@@ -162,10 +162,12 @@ button{
 	box-sizing: border-box;
 }
 .header__price:hover{
-	filter: saturate(30%);
+	background: #fff;
+	color: #000;
 }
 .main__slider-companies-img:hover{
-	filter: invert(100%);
+	/* filter: invert(100%); */
+	filter: brightness(100%);
 }
 
 @media(min-width: 768px){
@@ -301,8 +303,7 @@ button{
 	z-index: 1500;
 }
 .header__btn:hover{
-	/* opacity: 0.8; */
-	filter: invert(100%);
+	filter: brightness(0.5);
 }
 .header__nav-list{
 	position: absolute;
@@ -339,7 +340,8 @@ button{
 	border: none;
 }
 .header__button-close:hover{
-	filter: invert(100%);
+	filter: hue-rotate(30deg);
+	animation: rot 1s ease-out;
 }
 .header__nav-item-link{
 	color: #fff;
@@ -416,16 +418,36 @@ button{
 
 /* -------------------------- */
 /* First screen */
-
+.main__slider-iframe-bg{
+	z-index: -1;
+}
 .main__slider{
-	background: url("img/main-bg.jpg") no-repeat 35% 50%;
+	/* background: url("img/main-bg.jpg") no-repeat 35% 50%; */
 	background-clip: content-box;
 	background-attachment: fixed;
-	/* background-size: auto 100%; */
 	background-size: cover;
-	/* margin-top: 118px; */
 	height: 100%;
 	width: 100%;
+	position: relative;
+}
+.main__slider-bg{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	/* top: -95px; */
+	left: 0;
+}
+.main__slider-video-bg{
+	height: 150vh;
+    width: 100%;
+    display: block;
+    filter: grayscale(1) brightness(0.2);
+
+    z-index: -100;
+    object-fit: cover;
+    position: absolute;
+    top: -25vh;
 }
 .main__slider-head{
 	font-size: 40px;
@@ -433,6 +455,7 @@ button{
 }
 .main__slider-wrap{
 	padding-top: 29vh;
+	z-index: 100;
 }
 .main__slider-social{
 	display: none;
@@ -541,7 +564,7 @@ button{
 }
 @media(min-width: 768px){
 	.main__slider{
-		background: url("img/main-bg.jpg") no-repeat 35% 50%;
+		/* background: url("img/main-bg.jpg") no-repeat 35% 50%; */
 		background-clip: content-box;
 		background-attachment: fixed;
 		background-size: cover;
@@ -578,7 +601,9 @@ button{
 		justify-content: space-between;
 	}
 	.main__slider-social-img:hover{
-		filter: invert(100%);
+		/* filter: invert(100%); */
+		filter: brightness(0.5);
+		/* filter: contrast(0.1); */
 	}
 	.main__slider-head{
 		font-family: 'Gilroy Light';
@@ -586,7 +611,7 @@ button{
 		width: 500px;
 	}
 	.main__slider-text{
-		margin-bottom: 21.5vh;
+		margin-bottom: 20.5vh;
 		margin-right: 88px;
 		font-size: 16px;
 		line-height: 27px;
@@ -708,7 +733,6 @@ button{
 		 0% {right: 265px;}
 		 100% {right: 275px;}
 	}
-
 }
 
 
