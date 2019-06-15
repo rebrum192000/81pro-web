@@ -97,6 +97,7 @@ button{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	z-index: 1000;
 }
 .header__btn{
 	border: none;
@@ -230,7 +231,7 @@ button{
 	/* padding-top: 60px; */
 }
 .main__slider{
-	background: url("img/main-bg.jpg") no-repeat 35% 0%;
+	background: url("img/main-bg.jpg") no-repeat 35% 50%;
 	background-clip: content-box;
 	background-attachment: fixed;
 	/* background-size: auto 100%; */
@@ -267,4 +268,104 @@ button{
 }
 .main__slider-companies-img{
 	margin-bottom: 37px;
+}
+
+.main__best-img{
+	width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+}
+.main__best-img-wrap{
+	position: relative;
+}
+.main__best-img-wrap::before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(0deg, rgba(15, 15, 15, 0.6), rgba(15, 15, 15, 0.6));
+}
+.main__best-img-wrap::after{
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	width: 67px;
+	height: 67px;
+	transform: translate(-50%, -50%);
+	background: url("img/play-s.png");
+}
+.main__best-iframe{
+	width: 80%;
+	height: auto;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 500;
+}
+.modal-shadow{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 499;
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.main__best-pos{
+	position: relative;
+}
+.main__best-img-text{
+	position: absolute;
+	top: 73%;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.4em;
+	text-transform: uppercase;
+}
+
+.port__wrap{
+	display: flex;
+	flex-wrap: wrap;
+}
+.port__wrap-item{
+	width: 50%;
+	position: relative;
+}
+.port__wrap-img{
+	width: 100%;
+	display: block;
+}
+.port__wrap-img-text{
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}
+.port__wrap-item:hover .port__wrap-img-text{
+	display: block;
+}
+.port__wrap-link{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0.4em;
+	padding: 41px 0;
+	text-align: center;
+	flex-grow: 1;
 }
