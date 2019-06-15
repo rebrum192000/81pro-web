@@ -167,7 +167,7 @@ button{
 }
 .main__slider-companies-img:hover{
 	/* filter: invert(100%); */
-	filter: brightness(100%);
+	filter: brightness(0.3);
 }
 
 @media(min-width: 768px){
@@ -418,9 +418,6 @@ button{
 
 /* -------------------------- */
 /* First screen */
-.main__slider-iframe-bg{
-	z-index: -1;
-}
 .main__slider{
 	/* background: url("img/main-bg.jpg") no-repeat 35% 50%; */
 	background-clip: content-box;
@@ -435,8 +432,8 @@ button{
 	width: 100%;
 	overflow: hidden;
 	position: absolute;
-	/* top: -95px; */
 	left: 0;
+	z-index: -100;
 }
 .main__slider-video-bg{
 	height: 150vh;
