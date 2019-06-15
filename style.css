@@ -377,7 +377,7 @@ button{
 	}
 
 }
-@media(min-width:1300px){
+@media(min-width:1150px){
 	.header__nav-list{
 		position: absolute;
 		top: 50%;
@@ -432,7 +432,7 @@ button{
 	line-height: 40px;
 }
 .main__slider-wrap{
-	padding-top: 118px;
+	padding-top: 29vh;
 }
 .main__slider-social{
 	display: none;
@@ -450,7 +450,7 @@ button{
 	margin-bottom: 25px;
 }
 .main__slider-text{
-	margin-bottom: 55px;
+	margin-bottom: 9vh;
 	margin-right: 88px;
 }
 .main__slider-companies-img{
@@ -514,7 +514,6 @@ button{
 	background: url("img/close.png");
 	border: none;
 }
-
 .modal-shadow-close:hover{
 	animation: rot 1s ease-out;
 }
@@ -537,6 +536,9 @@ button{
 	letter-spacing: 0.4em;
 	text-transform: uppercase;
 }
+.main__slider-works{
+	display: none;
+}
 @media(min-width: 768px){
 	.main__slider{
 		background: url("img/main-bg.jpg") no-repeat 35% 50%;
@@ -552,7 +554,7 @@ button{
 		line-height: 70px;
 	}
 	.main__slider-wrap{
-		padding-top: 180px;
+		padding-top: 29vh;
 	}
 	.main__slider-companies{
 		display: flex;
@@ -581,9 +583,10 @@ button{
 	.main__slider-head{
 		font-family: 'Gilroy Light';
 		margin-bottom: 25px;
+		width: 500px;
 	}
 	.main__slider-text{
-		margin-bottom: 150px;
+		margin-bottom: 24.5vh;
 		margin-right: 88px;
 		font-size: 16px;
 		line-height: 27px;
@@ -652,9 +655,9 @@ button{
 	}
 
 	@keyframes rot {
-			 0% { transform: rotate(0); }
-			 100% { transform: rotate(180deg); }
-		}
+		 0% { transform: rotate(0); }
+		 100% { transform: rotate(180deg); }
+	}
 
 	.main__best-pos{
 		position: relative;
@@ -670,6 +673,44 @@ button{
 		text-transform: uppercase;
 	}
 }
+@media(min-width: 1250px){
+	.main__slider-head{
+		margin-bottom: 25px;
+		width: 600px;
+	}
+	.main__slider-works{
+		position: absolute;
+		top: 375px;
+		left: -60px;
+		width: 200px;
+		height: 50px;
+		display: block;
+	}
+	.main__slider-works-text{
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.4em;
+		text-transform: uppercase;
+		transform: rotate(-90deg);
+	}
+	.main__slider-works-text::before{
+		position: absolute;
+		content: "";
+		top: -48px;
+		right: 275px;
+		width: 14px;
+		height: 115px;
+		background: url("img/arrow-down.png");
+		transform: rotate(90deg);
+		animation: long 1s infinite;
+	}
+	@keyframes long {
+		 0% {right: 265px;}
+		 100% {right: 275px;}
+	}
+
+}
+
 
 /* First screen */
 /* -------------------------- */
