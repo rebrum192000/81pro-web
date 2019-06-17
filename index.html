@@ -22,7 +22,7 @@
 	<main class="index__main">
 		<section class="main__slider">
 			<div class="main__slider-bg" id="video-bg">
-			    <video src="img/main-video-s.mp4" class="main__slider-video-bg" autoplay muted loop>
+			    <video src="img/main-video-s.mp4" id="vid" class="main__slider-video-bg" autoplay muted loop>
 			    	<!-- <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
 			     	<source src="img/main-video-s.ogv" type='video/ogg; codecs="theora, vorbis"'>
 					<source src="img/main-video-s.webm" type='video/webm; codecs="vp8, vorbis"'> -->
@@ -241,6 +241,9 @@
 
 	<script src="scripts/best.js"></script>
 	<script src="scripts/menu.js"></script>
-
+	<script>	
+		setTimeout(function(){
+	    document.getElementById('vid').play();},1000);
+	</script>
 </body>
 </html>
