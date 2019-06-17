@@ -22,7 +22,10 @@
 	<main class="index__main">
 		<section class="main__slider">
 			<div class="main__slider-bg" id="video-bg">
-			    <video src="img/main-video-s.mp4" type="video/mp4" class="main__slider-video-bg"autoplay="autoplay" muted="muted" loop="loop">
+			    <video class="main__slider-video-bg"autoplay="autoplay" muted="muted" loop="loop">
+			    	<source src="img/main-video-s.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			     	<source src="img/main-video-s.ogv" type='video/ogg; codecs="theora, vorbis"'>
+					<source src="img/main-video-s.webm" type='video/webm; codecs="vp8, vorbis"'>
 			    </video>
 			</div>
 
@@ -170,10 +173,66 @@
 			</div>
 		
 		</section>
+
+		<!-- Верх-Низ -->
+
+		<section class="facts container">
+			<div class="facts__wrapper">
+				<h2 class="facts__title">факты о видеомаркетинге</h2>
+				<p class="facts__text"><span class="span-bold">Раскрывайте преимущества в видеоформате </span>и подчеркивайте свои сильные стороны</p>
+				<ul class="facts__list p0">
+					<li class="facts__item">
+						<h3 class="facts__item-title">54%</h3>
+						<p class="facts__item-desc">людей узнают о новых брендах за счёт видео. Видео продвигает лучше, чем сарафанное радио.</p>
+					</li>
+
+					<li class="facts__item">
+						<h3 class="facts__item-title">73%</h3>
+						<p class="facts__item-desc">посетителей покупают с большей вероятностью после просмотра видео.</p>
+					</li>
+					<li class="facts__item">
+						<h3 class="facts__item-title">70%</h3>
+						<p class="facts__item-desc">рекламных агентств считают, что видео эффективнее рекламы на телевидение.</p>
+					</li>
+					<li class="facts__item">
+						<h3 class="facts__item-title">91%</h3>
+						<p class="facts__item-desc">рост конверсии за счёт видеорекламы у трети компаний</p>
+					</li>
+					
+				</ul>
+			</div>
+		</section>
+
 	</main>
 
 	<footer class="footer container">
-		<h2 class="footer__title title">контакты</h2>
+		<h2 class="footer__title title p0">контакты</h2>
+		<h2 class="footer__title-bg p0">Контакты</h2>
+		<a class="footer__tel" href="tel:89122557878">8 912 255-78-78</a>
+		<div class="footer__social-wrapper">
+			<a class="footer__social-link" href="#">
+				<img class="footer__social-img" src="img/f_Telegram.png" alt="Telegram">
+			</a>
+			<a class="footer__social-link" href="#">
+				<img class="footer__social-img" src="img/f_Instagram.png" alt="Instagram">
+			</a>
+			<a class="footer__social-link" href="#">
+				<img class="footer__social-img" src="img/f_VK.png" alt="VK" >
+			</a>
+		</div>
+		<a class="footer__link-aboutUs" href="#">Подробнее о нас</a>
+		<div class="footer__forma-wrapper">
+			<p class="footer__forma-title p0">Оставьте ваши контакты и мы свяжемся в ближайшее время</p>
+			<form class="footer__forma" action="send.php" method="post">
+				<input class="footer__forma-input" type="text" name="name" placeholder="Ваше имя" required>
+				<input class="footer__forma-input" type="tel" name="tel" placeholder="Номер телефона" required>
+				<button class="footer__forma-button" type="submit">Отправить</button>
+				<label class="footer__forma-label">
+					<input type="checkbox" class="footer__forma-check" required><span class="footer__forma-span"></span>Согласен с политикой обработки конфиденциальных данных
+				</label>
+			</form>
+		</div>
+		<a class="footer__link-priv" href="#" download="">Политика конфиденциальности</a>
 	</footer>
 
 	<div class="modal-shadow">
