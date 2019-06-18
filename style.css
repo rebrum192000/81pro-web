@@ -605,7 +605,7 @@ button{
 
 .main__best-iframe{
 	width: 70vw;
-	height: 40vh;
+	height: 30vh;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -796,7 +796,7 @@ button{
 	}
 	.main__best-iframe{
 		width: 80vw;
-		height: 80vh;
+		height: 40vh;
 		position: fixed;
 		top: 50%;
 		left: 50%;
@@ -901,7 +901,7 @@ button{
 	}
 	.main__best-iframe{
 		width: 80vw;
-		height: 80vh;
+		height: 60vh;
 		position: fixed;
 		top: 50%;
 		left: 50%;
