@@ -21,25 +21,24 @@
 		</ul>
 	</header>
 
-	<main class="index__main">
+	<main class="index__main" id="link_top">
 		<section class="main__slider">
 			<div class="main__slider-bg" id="video-bg">
 			    <video src="img/main-video-s.mp4" id="vid" class="main__slider-video-bg" autoplay muted loop>
-			    	<!-- <source src="" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-			     	<source src="img/main-video-s.ogv" type='video/ogg; codecs="theora, vorbis"'>
-					<source src="img/main-video-s.webm" type='video/webm; codecs="vp8, vorbis"'> -->
 			    </video>
 			</div>
 
 			<div class="header__wrap">
 				<div class="header__btn-logo-text">
 					<button class="header__btn"></button>
-					<img src="img/logo.png" alt="" class="header__logo">
+					<a href="#link_top">
+						<img src="img/logo.png" alt="" class="header__logo">
+					</a>
 					<p class="p0 header__text">Видеопродакшн<br> полного цикла</p>
 				</div>
 				<div class="header__tel-price">
 					<a href="tel:+74951124252" class="header__tel">+7 495 112-42-52</a>
-					<a href="#contacts" class="header__price">Рассчитать стоимость</a>
+					<a href="#link_contacts" class="header__price">Рассчитать стоимость</a>
 				</div>
 			</div>
 			<div class="main__slider-wrap container">
@@ -60,7 +59,7 @@
 					<img src="img/comp5.png" alt="" class="main__slider-companies-img">
 				</div>
 				<div class="main__slider-works">
-					<a class="to-port" href="#portfolio"><p class="p0 main__slider-works-text">Наши работы</p></a>
+					<a class="to-port" href="#link_portfolio"><p class="p0 main__slider-works-text">Наши работы</p></a>
 				</div>
 			</div>
 		</section>
@@ -75,7 +74,7 @@
 				
 		</div>
 		<section class="main__port">
-			<div class="port__wrap" id="portfolio">
+			<div class="port__wrap" id="link_portfolio">
 				<div class="port__wrap-item">
 					<img src="img/port1.jpg" alt="" class="port__wrap-img">
 					<p class="port__wrap-img-text p0">Название в одну или две небольших строки</p>
@@ -284,7 +283,7 @@
 						<source srcset="img/quiz-sm-mob.png">
 						<img class="quiz__photo-small" src="img/quiz-sm-mob.png" alt="Frame">
 					</picture>
-					<a class="quiz__photo-link" href="#contacts">Узнать стоимость</a>
+					<a class="quiz__photo-link" href="#link_contacts">Узнать стоимость</a>
 				</div>
 				<div class="quiz__inst-wrap">
 					<picture>
@@ -428,7 +427,7 @@
 
 	</main>
 
-	<footer class="footer container" id="contacts">
+	<footer class="footer container" id="link_contacts">
 		<h2 class="footer__title title p0">контакты</h2>
 		<h2 class="footer__title-bg p0">Контакты</h2>
 		<a class="footer__tel" href="tel:89122557878">8 912 255-78-78</a>
