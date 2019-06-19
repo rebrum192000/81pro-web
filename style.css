@@ -1861,6 +1861,7 @@ button{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-overflow-scrolling: touch;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	margin-bottom: 105px;
@@ -1975,6 +1976,7 @@ button{
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display: flex;
+		-webkit-overflow-scrolling: touch;
 		overflow-x: scroll;
 		overflow-y: hidden;
 		margin-bottom: 98px;
